@@ -1,0 +1,324 @@
+
+/* Contenitore delle sezioni */
+.wrapper{
+  position: relative;
+  height: 70vh;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Pagina iniziale prima delle scelte */
+#step-1 div{
+  color: var(--white-color);
+  text-align: center;
+  font-size: 4rem;
+  text-shadow:
+    0.08rem 0.08rem var(--black-color),
+    0.08rem 0.08rem var(--black-color),
+    0.08rem 0.08rem var(--black-color),
+    0.08rem 0.08rem var(--black-color);
+}
+
+/* Bottoni della parte dinamica */
+.card button {
+  margin-top: 100px;
+  background: rgba(0,0,0,0);
+  width: 200px;
+  height: 100px;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0.5px solid var(--white-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: var(--white-color);
+  transition: all 0.1s ease;
+  cursor: pointer;
+
+  text-shadow:
+    0.08rem 0.08rem var(--black-color),
+    0.08rem 0.08rem var(--black-color),
+    0.08rem 0.08rem var(--black-color),
+    0.08rem 0.08rem var(--black-color);
+}
+
+.card button:hover {
+  border: 0.5px solid var(--red-color);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+  text-shadow:
+  0.08rem 0.08rem var(--red-color),
+  0.08rem 0.08rem var(--red-color),
+  0.08rem 0.08rem var(--red-color),
+  0.08rem 0.08rem var(--red-color);
+}
+
+/* Parte delle scelte, schermo sdoppiato */
+.split-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  }
+  
+.split-container div{
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+}
+
+.split-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Le immagini sono nascoste finchè non vengono cambiate dal js */
+.hidden{
+  display: none;
+}
+
+#step-1 p{
+  margin-top: 50px;
+}
+
+/* Immagini delle scelte dinamiche vengono */
+#step-1{
+  background-image: url('../images/Home-page.jpg');
+}
+
+#step-2 .left {
+  background-image: url('../images/Strada.jpg');
+}
+
+#step-2 .right {
+  background-image: url('../images/Strada-sterrata.jpg');
+}
+
+#step-3 .left {
+  background-image: url('../images/Elettrica.jpg');
+}
+
+#step-3 .right {
+  background-image: url('../images/Muscolare.jpg');
+}
+
+#step-4 .left {
+  background-image: url('../images/Discesa2.jpg');
+}
+
+#step-4 .right {
+  background-image: url('../images/Pedalare.jpg');
+}
+
+#step-5 .left {
+  background-image: url('../images/Viaggio.jpg');
+}
+
+#step-5 .right {
+  background-image: url('../images/Città.jpg');
+}
+
+
+/* Fine della parte 'Trova la tua bici'*/
+
+
+
+/* Seconda sezione */
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.bike-section {
+  margin-bottom: 4rem;
+}
+
+.bike-text {
+  text-align: left;
+}
+
+.bike-text h4 {
+  color: var(--red-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bike-text h2 {
+  font-size: 1.5rem;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.bike-text p {
+  color: var(--grey-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.bike-image {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+
+#bike-nomad .bike-image{
+  background-image: url('../images/SantaCruzNomad.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#bike-turbolevo .bike-image{
+  background-image: url('../images/TurboLevo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#bike-santafixie .bike-image{
+  background-image: url('../images/Santafixie.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Smartphone */
+@media screen 
+and (max-width: 768px) {
+
+  /* Sezione 1 */
+  .wrapper{
+    height: 25vh;
+  }
+
+  .lower-wrapper .picture{
+  height: 20vh;
+}
+
+  #step-1 div{
+  height: 25vh;
+  font-size: 1.4rem;
+  }
+
+  .card button {
+  width: 6rem;
+  height: 2.5rem;
+  margin-top: 20px;
+  border-radius: 3rem;
+  font-size: 1rem;
+  }
+
+  /* Sezione 2 */
+
+   #bike-nomad .bike-image{
+    order: 1;
+   }
+
+   #bike-nomad .bike-text{
+    order: 2;
+   }
+
+   #bike-santafixie .bike-image{
+    order: 1;
+   }
+
+   #bike-santafixie .bike-text{
+    order: 2;
+   }
+
+  .bike-text h4 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bike-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .bike-text p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+
+/* Tablet */
+@media screen 
+and (min-width:768px) 
+and (max-width: 1024px) {
+
+  /* Sezione 1 */
+  .wrapper{
+  height: 35vh;
+  }
+
+  .lower-wrapper .description{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  }
+
+    .lower-wrapper .picture{
+    height: 28vh;
+  }
+
+  /* Sezione 2 */
+
+  .bike-text h4 {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bike-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .bike-text p {
+    font-size: 0.7rem;
+    line-height: 1.6;
+  }
+
+}
+
+/* Bigger desktop */
+@media screen 
+and (min-width:2200px) {
+
+/* Sezione 2 */
+
+  .bike-text h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bike-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .bike-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
