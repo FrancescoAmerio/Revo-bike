@@ -32,6 +32,7 @@
 /* Bottoni della parte dinamica */
 .card button {
   margin-top: 100px;
+  margin-bottom: 40px;
   background: rgba(0,0,0,0);
   width: 200px;
   height: 100px;
@@ -43,6 +44,7 @@
   color: var(--white-color);
   transition: all 0.1s ease;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   text-shadow:
     0.08rem 0.08rem var(--black-color),
@@ -51,14 +53,11 @@
     0.08rem 0.08rem var(--black-color);
 }
 
+/* Passaggio sul bottone */
 .card button:hover {
+  transform: scale(1.1);
   border: 0.5px solid var(--red-color);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
-  text-shadow:
-  0.08rem 0.08rem var(--red-color),
-  0.08rem 0.08rem var(--red-color),
-  0.08rem 0.08rem var(--red-color),
-  0.08rem 0.08rem var(--red-color);
 }
 
 /* Parte delle scelte, schermo sdoppiato */
@@ -212,7 +211,7 @@ and (max-width: 768px) {
 
   /* Sezione 1 */
   .wrapper{
-    height: 25vh;
+    height: 30vh;
   }
 
   .lower-wrapper .picture{
