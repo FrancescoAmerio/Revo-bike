@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 let elements = document.querySelectorAll(".nav");
 
 const step1 = document.getElementById("step-1")
@@ -56,3 +58,5 @@ document.getElementById('btn-pedalare').addEventListener('click', function() {
   window.location.href = 'mountain.html#trail';
 });
 
+
+});
