@@ -10,6 +10,8 @@
         type="text/stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <!-- Link per mappa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
@@ -111,11 +113,30 @@
         
     </main>
     
-    <footer>
-        <p>&copy; 2025 Francesco Amerio</p>
-    </footer>
+<footer>
+  <div class="footer-wrapper">
+    <form class="contact-wrapper">
+      <h3>Contattaci</h3>
+      <label for="email">Email:</label>
+      <input class="input-area" type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
 
-  <script src="./assets/js/script.js"></script>
+      <label for="message">Messaggio:</label>
+      <textarea class="input-area" id="message" name="message" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+
+      <button type="submit">Invia</button>
+    </form>
+
+    <div class="map-wrapper">
+        <h3>Dove trovarci</h3>
+      <div id="map"></div>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2025 Francesco Amerio</p>
+</footer>
+    <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./assets/js/footer.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
