@@ -1,205 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progetto front</title>
-    <!-- foglio CSS per normalizzare gli stili di default -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
-      rel="stylesheet"
-      type="text/stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/home.css" />
-    <!-- Link per mappa -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  </head>
 
-  <body>
-    <header>
-      <img src="./assets/images/RevoBike3.png" alt="" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mountain.html">Mountain</a></li>
-          <li><a href="city.html">City</a></li>
-          <li><a href="ebikes.html">eBikes</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto front</title>
+  <!-- foglio CSS per normalizzare gli stili di default -->
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" rel="stylesheet"
+    type="text/stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/home.css" />
+  <!-- Link per mappa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
 
-    <main>
-      <!-- Contenitore "Trova la tu bici" -->
-      <div class="wrapper">
-        <!-- Parte visibile inizialmente -->
-        <section class="card" id="step-1">
-          <div>
-            <p id="question-1">Trova la bici adatta a te</p>
-            <button id="btn-start">Inizia</button>
-          </div>
-        </section>
-        <!-- Parte in display none fino al click di start -->
-        <section class="card hidden split-container" id="step-2">
-          <div class="half left">
-            <button id="btn-strada">Strada</button>
-          </div>
-          <div class="half right">
-            <button id="btn-offroad">Sterrato</button>
-          </div>
-        </section>
+<body>
+  <header>
+    <img src="./assets/images/RevoBike3.png" alt="" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mountain.html">Mountain</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="ebikes.html">eBikes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section class="card hidden split-container" id="step-3">
-          <div class="half left">
-            <button id="btn-elettrica">Elettrica</button>
-          </div>
-          <div class="half right">
-            <button id="btn-muscolare">Muscolare</button>
-          </div>
-        </section>
-
-        <section class="card hidden split-container" id="step-4">
-          <div class="half left">
-            <button id="btn-discesa">Solo discesa</button>
-          </div>
-          <div class="half right">
-            <button id="btn-pedalare">Salita e discesa</button>
-          </div>
-        </section>
-
-        <section class="card hidden split-container" id="step-5">
-          <div class="half left">
-            <button id="btn-viaggio">Viaggio</button>
-          </div>
-          <div class="half right">
-            <button id="btn-citta">Città</button>
-          </div>
-        </section>
-      </div>
-      <!--Sezione novità  -->
-      <div class="bike-section" id="bike-nomad">
-        <section class="bike-card grid-layout">
-          <div class="bike-text">
-            <h4>Novità</h4>
-            <h2>Nomad</h2>
-            <p>
-              La Nomad è una mountain bike da enduro pensata per chi cerca
-              prestazioni estreme sui trail più impegnativi. Progettata per
-              affrontare discese tecniche, salti e tratti rocciosi, combina una
-              geometria aggressiva con una sospensione posteriore a lunga
-              escursione, capace di assorbire ogni impatto mantenendo il
-              controllo. Il telaio in carbonio garantisce leggerezza e rigidità,
-              mentre il carro posteriore ottimizzato offre una trazione
-              eccellente anche nei tratti più scivolosi. Dotata di ruote da 29”
-              (o configurazione mullet), freni potenti e componentistica di alta
-              gamma, la Nomad si adatta perfettamente a chi vuole spingere oltre
-              i propri limiti. Perfetta per bike park, enduro racing o
-              esplorazioni in montagna, offre sicurezza, velocità e divertimento
-              in ogni condizione. Ogni dettaglio è studiato per resistere
-              all’uso intensivo e garantire affidabilità su qualsiasi terreno.
-              La Nomad non è solo una bici: è una compagna fidata per chi ama
-              vivere l’enduro senza compromessi.
-            </p>
-          </div>
-          <div class="bike-image"></div>
-        </section>
-      </div>
-
-      <div class="bike-section" id="bike-turbolevo">
-        <section class="bike-card grid-layout">
-          <div class="bike-image"></div>
-          <div class="bike-text">
-            <h4>Novità</h4>
-            <h2>Turbo Levo</h2>
-            <p>
-              La Turbo Levo è una mountain bike elettrica da enduro progettata
-              per spingere oltre ogni limite. Grazie all’assistenza intelligente
-              del motore, offre una spinta naturale e potente che permette di
-              affrontare salite impegnative senza rinunciare al divertimento
-              della discesa. La geometria del telaio è studiata per garantire
-              stabilità e maneggevolezza anche sui terreni più tecnici, mentre
-              la sospensione posteriore ad alta escursione assorbe ogni urto,
-              mantenendo controllo e comfort. Il motore integrato e la batteria
-              ad alta capacità offrono un’autonomia eccellente per lunghe
-              avventure off-road. Con ruote da 29" e componenti di alta gamma,
-              la Turbo Levo si adatta sia ai rider esperti che ai principianti
-              che vogliono esplorare nuovi sentieri. Ogni dettaglio, dal display
-              intuitivo al sistema di gestione dell’energia, è pensato per
-              migliorare l’esperienza in sella. La Turbo Levo non è solo una
-              e-bike, è una rivoluzione nel mondo dell’enduro elettrico.
-            </p>
-          </div>
-        </section>
-      </div>
-
-      <div class="bike-section" id="bike-santafixie">
-        <section class="bike-card grid-layout">
-          <div class="bike-text">
-            <h4>Novità</h4>
-            <h2>Santafixie</h2>
-            <p>
-              La Santafixie è una bici a scatto fisso iconica, pensata per i
-              ciclisti urbani che vogliono unire stile e funzionalità.
-              Progettata e assemblata in Europa, questa bici si distingue per il
-              suo telaio in alluminio leggero e resistente, ideale per
-              affrontare il traffico cittadino con agilità e velocità. Il design
-              pulito e senza fronzoli valorizza l’essenza del ciclismo urbano:
-              essenziale, diretto e senza compromessi. Il rapporto fisso 46/16
-              assicura una pedalata fluida e reattiva, perfetta per spostamenti
-              dinamici o per chi ama sentire il controllo diretto sulla strada.
-              Le ruote da 700c con cerchi rinforzati garantiscono stabilità e
-              durata nel tempo, mentre la vasta scelta di colori permette di
-              personalizzare lo stile in base alla propria personalità. La
-              Santafixie non è solo un mezzo di trasporto, ma un’affermazione di
-              libertà, velocità e identità metropolitana. Ideale per vivere la
-              città in modo autentico e sostenibile.
-            </p>
-          </div>
-          <div
-            class="bike-image"
-            style="background-image: url('./assets/images/Santafixie.jpg')"
-          ></div>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer-wrapper">
-        <form class="contact-wrapper">
-          <h3>Contattaci</h3>
-          <label for="email">Email:</label>
-          <input
-            class="input-area"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Inserisci la tua email"
-            required
-          />
-
-          <label for="message">Messaggio:</label>
-          <textarea
-            class="input-area"
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Scrivi il tuo messaggio..."
-            required
-          ></textarea>
-
-          <button type="submit">Invia</button>
-        </form>
-
-        <div class="map-wrapper">
-          <h3>Dove trovarci</h3>
-          <div id="map"></div>
+  <main>
+    <!-- Contenitore "Trova la tu bici" -->
+    <div class="wrapper">
+      <!-- Parte visibile inizialmente -->
+      <section class="card" id="step-1">
+        <div>
+          <p id="question-1">Trova la bici adatta a te</p>
+          <button id="btn-start">Inizia</button>
         </div>
+      </section>
+      <!-- Parte in display none fino al click di start -->
+      <section class="card hidden split-container" id="step-2">
+        <div class="half left">
+          <button id="btn-strada">Strada</button>
+        </div>
+        <div class="half right">
+          <button id="btn-offroad">Sterrato</button>
+        </div>
+      </section>
+
+      <section class="card hidden split-container" id="step-3">
+        <div class="half left">
+          <button id="btn-elettrica">Elettrica</button>
+        </div>
+        <div class="half right">
+          <button id="btn-muscolare">Muscolare</button>
+        </div>
+      </section>
+
+      <section class="card hidden split-container" id="step-4">
+        <div class="half left">
+          <button id="btn-discesa">Solo discesa</button>
+        </div>
+        <div class="half right">
+          <button id="btn-pedalare">Salita e discesa</button>
+        </div>
+      </section>
+
+      <section class="card hidden split-container" id="step-5">
+        <div class="half left">
+          <button id="btn-viaggio">Viaggio</button>
+        </div>
+        <div class="half right">
+          <button id="btn-citta">Città</button>
+        </div>
+      </section>
+    </div>
+    <!--Sezione novità  -->
+    <div class="bike-section" id="bike-nomad">
+      <section class="bike-card grid-layout">
+        <div class="bike-text">
+          <h4>Novità</h4>
+          <h2>Nomad</h2>
+          <p>
+            La Nomad è una mountain bike da enduro pensata per chi cerca
+            prestazioni estreme sui trail più impegnativi. Progettata per
+            affrontare discese tecniche, salti e tratti rocciosi, combina una
+            geometria aggressiva con una sospensione posteriore a lunga
+            escursione, capace di assorbire ogni impatto mantenendo il
+            controllo. Il telaio in carbonio garantisce leggerezza e rigidità,
+            mentre il carro posteriore ottimizzato offre una trazione
+            eccellente anche nei tratti più scivolosi. Dotata di ruote da 29”
+            (o configurazione mullet), freni potenti e componentistica di alta
+            gamma, la Nomad si adatta perfettamente a chi vuole spingere oltre
+            i propri limiti. Perfetta per bike park, enduro racing o
+            esplorazioni in montagna, offre sicurezza, velocità e divertimento
+            in ogni condizione. Ogni dettaglio è studiato per resistere
+            all’uso intensivo e garantire affidabilità su qualsiasi terreno.
+            La Nomad non è solo una bici: è una compagna fidata per chi ama
+            vivere l’enduro senza compromessi.
+          </p>
+        </div>
+        <div class="bike-image"></div>
+      </section>
+    </div>
+
+    <div class="bike-section" id="bike-turbolevo">
+      <section class="bike-card grid-layout">
+        <div class="bike-image"></div>
+        <div class="bike-text">
+          <h4>Novità</h4>
+          <h2>Turbo Levo</h2>
+          <p>
+            La Turbo Levo è una mountain bike elettrica da enduro progettata
+            per spingere oltre ogni limite. Grazie all’assistenza intelligente
+            del motore, offre una spinta naturale e potente che permette di
+            affrontare salite impegnative senza rinunciare al divertimento
+            della discesa. La geometria del telaio è studiata per garantire
+            stabilità e maneggevolezza anche sui terreni più tecnici, mentre
+            la sospensione posteriore ad alta escursione assorbe ogni urto,
+            mantenendo controllo e comfort. Il motore integrato e la batteria
+            ad alta capacità offrono un’autonomia eccellente per lunghe
+            avventure off-road. Con ruote da 29" e componenti di alta gamma,
+            la Turbo Levo si adatta sia ai rider esperti che ai principianti
+            che vogliono esplorare nuovi sentieri. Ogni dettaglio, dal display
+            intuitivo al sistema di gestione dell’energia, è pensato per
+            migliorare l’esperienza in sella. La Turbo Levo non è solo una
+            e-bike, è una rivoluzione nel mondo dell’enduro elettrico.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="bike-section" id="bike-santafixie">
+      <section class="bike-card grid-layout">
+        <div class="bike-text">
+          <h4>Novità</h4>
+          <h2>Santafixie</h2>
+          <p>
+            La Santafixie è una bici a scatto fisso iconica, pensata per i
+            ciclisti urbani che vogliono unire stile e funzionalità.
+            Progettata e assemblata in Europa, questa bici si distingue per il
+            suo telaio in alluminio leggero e resistente, ideale per
+            affrontare il traffico cittadino con agilità e velocità. Il design
+            pulito e senza fronzoli valorizza l’essenza del ciclismo urbano:
+            essenziale, diretto e senza compromessi. Il rapporto fisso 46/16
+            assicura una pedalata fluida e reattiva, perfetta per spostamenti
+            dinamici o per chi ama sentire il controllo diretto sulla strada.
+            Le ruote da 700c con cerchi rinforzati garantiscono stabilità e
+            durata nel tempo, mentre la vasta scelta di colori permette di
+            personalizzare lo stile in base alla propria personalità. La
+            Santafixie non è solo un mezzo di trasporto, ma un’affermazione di
+            libertà, velocità e identità metropolitana. Ideale per vivere la
+            città in modo autentico e sostenibile.
+          </p>
+        </div>
+        <div class="bike-image" style="background-image: url('./assets/images/Santafixie.jpg')"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrapper">
+      <form class="contact-wrapper">
+        <h3>Contattaci</h3>
+        <label for="email">Email:</label>
+        <input class="input-area" type="email" id="email" name="email" placeholder="Inserisci la tua email" required />
+
+        <label for="message">Messaggio:</label>
+        <textarea class="input-area" id="message" name="message" rows="5" placeholder="Scrivi il tuo messaggio..."
+          required></textarea>
+
+        <button type="submit">Invia</button>
+      </form>
+
+      <div class="map-wrapper">
+        <h3>Dove trovarci</h3>
+        <div id="map"></div>
       </div>
-      <p class="copyright">&copy; 2025 Francesco Amerio</p>
-    </footer>
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="./assets/js/footer.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+    </div>
+    <p class="copyright">&copy; 2025 Francesco Amerio</p>
+  </footer>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="./assets/js/footer.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
