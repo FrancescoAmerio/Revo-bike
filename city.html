@@ -1,130 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Progetto front</title>
     <!-- foglio CSS per normalizzare gli stili di default -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" rel="stylesheet" type="text/stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+      type="text/stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <!-- Link per mappa -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <img src="./assets/images/RevoBike3.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="mountain.html" >Mountain</a></li>
-                <li><a href="city.html" >City</a></li>
-                <li><a href="ebikes.html" >eBikes</a></li>
-              </ul>
-        </nav>
+      <img src="./assets/images/RevoBike3.png" alt="" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mountain.html">Mountain</a></li>
+          <li><a href="city.html">City</a></li>
+          <li><a href="ebikes.html">eBikes</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1>Fixed</h1>
-        <div class="grid">
-            <div class="bike-card">
-                <h2>Velocivibe</h2>
-                <img src="./assets/images/fixed1.webp">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, minima? Aspernatur fuga fugiat voluptate, iusto veritatis repellendus quidem perspiciatis quo aliquam rem assumenda molestias commodi magnam laboriosam, fugit, voluptatum aut?</p>
-            </div>
-            <div class="bike-card">
-                <h2>MonoRush</h2>
-                <img src="./assets/images/fixed2.webp">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sunt suscipit, temporibus officia reprehenderit rem vitae rerum accusantium? Cumque nam consectetur saepe laudantium quas aspernatur veritatis sit fugiat? Esse, dolores!</p>
-            </div>
-            <div class="bike-card">
-                <h2>UrbanGhost</h2>
-                <img src="./assets/images/fixed3.webp">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eos, necessitatibus eaque fugit consequatur, ullam quasi modi incidunt velit quisquam magni nam in officia ipsa cupiditate saepe, maiores dolores rerum.</p>
-            </div>
-            <div class="bike-card">
-                <h2>Santafixie</h2>
-                <img src="./assets/images/fixed4.webp">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea, laborum est nihil perferendis sit, doloremque voluptatibus iusto quidem, a eos. Qui nulla aut ea voluptatum nihil numquam reiciendis aliquid.</p>
-            </div>
-            <div class="bike-card">
-                <h2>NakedSpin</h2>
-                <img src="./assets/images/fixed5.webp">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, laudantium adipisci dolores ex unde culpa consequuntur. Repellat ex vitae, eos, possimus accusamus qui optio ipsum cumque amet eius tenetur vel.</p>
-            </div>
-            <div class="bike-card">
-                <h2>ZenCrank</h2>
-                <img src="./assets/images/fixed6.webp">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit accusantium neque amet distinctio cumque maiores illum eveniet! Iusto dolorum est veritatis autem impedit itaque? Beatae officia velit ducimus quo.</p>
-            </div>
+      <h1>Fixed</h1>
+      <div class="grid">
+        <div class="bike-card">
+          <h2>Velocivibe</h2>
+          <img src="./assets/images/fixed1.webp" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem, minima? Aspernatur fuga fugiat voluptate, iusto
+            veritatis repellendus quidem perspiciatis quo aliquam rem assumenda
+            molestias commodi magnam laboriosam, fugit, voluptatum aut?
+          </p>
         </div>
-
-        <h1 id="trekking">Trekking</h1>
-        <div class="grid">
-            <div class="bike-card">
-                <h2>TrailSeeker</h2>
-                <img src="./assets/images/Trekking1.jpg">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, minima? Aspernatur fuga fugiat voluptate, iusto veritatis repellendus quidem perspiciatis quo aliquam rem assumenda molestias commodi magnam laboriosam, fugit, voluptatum aut?</p>
-            </div>
-            <div class="bike-card">
-                <h2>GlobeTrek X</h2>
-                <img src="./assets/images/Trekking2.jpg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sunt suscipit, temporibus officia reprehenderit rem vitae rerum accusantium? Cumque nam consectetur saepe laudantium quas aspernatur veritatis sit fugiat? Esse, dolores!</p>
-            </div>
-            <div class="bike-card">
-                <h2>Atlas Flow</h2>
-                <img src="./assets/images/Trekking3.jpg">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eos, necessitatibus eaque fugit consequatur, ullam quasi modi incidunt velit quisquam magni nam in officia ipsa cupiditate saepe, maiores dolores rerum.</p>
-            </div>
-            <div class="bike-card">
-                <h2>PathWalker 700</h2>
-                <img src="./assets/images/Trekking4.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea, laborum est nihil perferendis sit, doloremque voluptatibus iusto quidem, a eos. Qui nulla aut ea voluptatum nihil numquam reiciendis aliquid.</p>
-            </div>
-            <div class="bike-card">
-                <h2>TerraLine</h2>
-                <img src="./assets/images/Trekking5.jpg">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, laudantium adipisci dolores ex unde culpa consequuntur. Repellat ex vitae, eos, possimus accusamus qui optio ipsum cumque amet eius tenetur vel.</p>
-            </div>
-            <div class="bike-card">
-                <h2>Nomad Evo</h2>
-                <img src="./assets/images/Trekking6.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit accusantium neque amet distinctio cumque maiores illum eveniet! Iusto dolorum est veritatis autem impedit itaque? Beatae officia velit ducimus quo.</p>
-            </div>
+        <div class="bike-card">
+          <h2>MonoRush</h2>
+          <img src="./assets/images/fixed2.webp" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            sunt suscipit, temporibus officia reprehenderit rem vitae rerum
+            accusantium? Cumque nam consectetur saepe laudantium quas aspernatur
+            veritatis sit fugiat? Esse, dolores!
+          </p>
         </div>
+        <div class="bike-card">
+          <h2>UrbanGhost</h2>
+          <img src="./assets/images/fixed3.webp" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eos,
+            necessitatibus eaque fugit consequatur, ullam quasi modi incidunt
+            velit quisquam magni nam in officia ipsa cupiditate saepe, maiores
+            dolores rerum.
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>Santafixie</h2>
+          <img src="./assets/images/fixed4.webp" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea,
+            laborum est nihil perferendis sit, doloremque voluptatibus iusto
+            quidem, a eos. Qui nulla aut ea voluptatum nihil numquam reiciendis
+            aliquid.
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>NakedSpin</h2>
+          <img src="./assets/images/fixed5.webp" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum,
+            laudantium adipisci dolores ex unde culpa consequuntur. Repellat ex
+            vitae, eos, possimus accusamus qui optio ipsum cumque amet eius
+            tenetur vel.
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>ZenCrank</h2>
+          <img src="./assets/images/fixed6.webp" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            suscipit accusantium neque amet distinctio cumque maiores illum
+            eveniet! Iusto dolorum est veritatis autem impedit itaque? Beatae
+            officia velit ducimus quo.
+          </p>
+        </div>
+      </div>
 
+      <h1 id="trekking">Trekking</h1>
+      <div class="grid">
+        <div class="bike-card">
+          <h2>TrailSeeker</h2>
+          <img src="./assets/images/Trekking1.jpg" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem, minima? Aspernatur fuga fugiat voluptate, iusto
+            veritatis repellendus quidem perspiciatis quo aliquam rem assumenda
+            molestias commodi magnam laboriosam, fugit, voluptatum aut?
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>GlobeTrek X</h2>
+          <img src="./assets/images/Trekking2.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            sunt suscipit, temporibus officia reprehenderit rem vitae rerum
+            accusantium? Cumque nam consectetur saepe laudantium quas aspernatur
+            veritatis sit fugiat? Esse, dolores!
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>Atlas Flow</h2>
+          <img src="./assets/images/Trekking3.jpg" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eos,
+            necessitatibus eaque fugit consequatur, ullam quasi modi incidunt
+            velit quisquam magni nam in officia ipsa cupiditate saepe, maiores
+            dolores rerum.
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>PathWalker 700</h2>
+          <img src="./assets/images/Trekking4.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea,
+            laborum est nihil perferendis sit, doloremque voluptatibus iusto
+            quidem, a eos. Qui nulla aut ea voluptatum nihil numquam reiciendis
+            aliquid.
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>TerraLine</h2>
+          <img src="./assets/images/Trekking5.jpg" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum,
+            laudantium adipisci dolores ex unde culpa consequuntur. Repellat ex
+            vitae, eos, possimus accusamus qui optio ipsum cumque amet eius
+            tenetur vel.
+          </p>
+        </div>
+        <div class="bike-card">
+          <h2>Nomad Evo</h2>
+          <img src="./assets/images/Trekking6.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            suscipit accusantium neque amet distinctio cumque maiores illum
+            eveniet! Iusto dolorum est veritatis autem impedit itaque? Beatae
+            officia velit ducimus quo.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>
-  <div class="footer-wrapper">
-    <form class="contact-wrapper">
-      <h3>Contattaci</h3>
-      <label for="email">Email:</label>
-      <input class="input-area" type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+      <div class="footer-wrapper">
+        <form class="contact-wrapper">
+          <h3>Contattaci</h3>
+          <label for="email">Email:</label>
+          <input
+            class="input-area"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Inserisci la tua email"
+            required
+          />
 
-      <label for="message">Messaggio:</label>
-      <textarea class="input-area" id="message" name="message" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+          <label for="message">Messaggio:</label>
+          <textarea
+            class="input-area"
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Scrivi il tuo messaggio..."
+            required
+          ></textarea>
 
-      <button type="submit">Invia</button>
-    </form>
+          <button type="submit">Invia</button>
+        </form>
 
-    <div class="map-wrapper">
-        <h3>Dove trovarci</h3>
-      <div id="map"></div>
-    </div>
-  </div>
-  <p class="copyright">&copy; 2025 Francesco Amerio</p>
-</footer>
+        <div class="map-wrapper">
+          <h3>Dove trovarci</h3>
+          <div id="map"></div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 Francesco Amerio</p>
+    </footer>
     <!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="./assets/js/footer.js"></script>
-
-</body>
-
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./assets/js/footer.js"></script>
+  </body>
 </html>
