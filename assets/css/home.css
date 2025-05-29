@@ -21,9 +21,9 @@
   color: var(--white-color);
   text-align: center;
   font-size: 4rem;
-  text-shadow: 0.08rem 0.08rem var(--black-color),
-    0.08rem 0.08rem var(--black-color), 0.08rem 0.08rem var(--black-color),
-    0.08rem 0.08rem var(--black-color);
+  text-shadow: 0.1rem 0.1rem var(--black-color),
+    0.1rem 0.1rem var(--black-color), 0.1rem 0.1rem var(--black-color),
+    0.1rem 0.1rem var(--black-color);
 }
 
 /* Bottoni della parte dinamica */
